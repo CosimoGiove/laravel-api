@@ -19,3 +19,4 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 Route::get('/projects',[PageController::class,"index"]);
+Route::get('project/{id}', [PageController::class,"show"]);
