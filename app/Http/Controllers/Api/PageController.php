@@ -20,11 +20,11 @@ class PageController extends Controller
     public function show(string $id)
     {
 
-        $project = Project::where('id', $id)->first();
+        $projects = Project::where('id', $id)->first();
 
         return response()->json([
             'success' => true,
-            'data' => $project
+            'data' => $projects
         ]);
     }
 }
